@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Mohommed Ali Shah </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body>
+  <nav class="nav" style="background-color: #000;">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">Mohommed Ali Shah</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+        <span class="navTrigger" id="navbut">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+    <div class="ma_box-main" id="sell">
+        <h1 style="color: white;">Contact</h1>
+        <hr style="height: 2px; width: 50px; background-color: white; margin-top: -5px;">
+        <br>
+        <form id="contact">
+          <input type="text" placeholder="  Name" class="sell_input" id="name" name="name" required>
+          <br>
+          <input type="email" placeholder="  Email Address" class="sell_input" id="email" name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <br>
+          <textarea type="tel" placeholder="  Messages if any" class="sell_input" id="message" name="no"></textarea>
+          <br>
+          <button class="btn" id="submit">Submit</button>
+        </form>
+      </div>
+
+
+    <footer style="background-color: #000;">
+        <div class="menu">
+            <div class="label">Follow Major Ali Shah - </div>
+            <div class="item twitter"><a href="https://twitter.com/MajorAliShah"
+                    target="_blank"><span>Twitter</span></a></div>
+            <div class="item ig"><a href="https://www.instagram.com/majoralishah/"
+                    target="_blank"><span>Instagram</span></a></div>
+            <div class="item fb"><a href="https://www.facebook.com/mohommed.shah"
+                    target="_blank"><span>Facebook</span></a></div>
+            <div class="item lin"><a href="https://www.linkedin.com/in/major-mohommed-ali-shah-195320193/"
+                    target="_blank"><span>Linkedin</span></a></div>
+            <div class="item yt"><a href="https://www.youtube.com/channel/UCsoLrP4kr1j5E0CIBq6II3w"
+                    target="_blank"><span>Youtube</span></a></div>
+
+            <div class="rights" style="color: white; font-size: 1.5em;">
+                <h4>Designed with ❤️ by <a id="ra" href="https://rrs12.github.io/MINIX/" target="_blank">MINIX
+                        Developers</a></h4>
+            </div>
+        </div>
+
+    </footer>
+ <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+  apiKey: "AIzaSyC8SVzMtjk6KcvI_znvJh4_QQdG7WnvsvY",
+  authDomain: "alishah-54cee.firebaseapp.com",
+  databaseURL: "https://alishah-54cee-default-rtdb.firebaseio.com",
+  projectId: "alishah-54cee",
+  storageBucket: "alishah-54cee.appspot.com",
+  messagingSenderId: "910950780360",
+  appId: "1:910950780360:web:24ccb976d094a6237d84fd"
+};
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({
+          timestampsInSnapshots: true
+        });
+      </script>
+    <script src="home.js"></script>
+    <script src="nav.js"></script>
+</body>
+
+</html>

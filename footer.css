@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.menu {
+    background-color: black;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    padding: 50px 20px 40px 20px ;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    bottom: 0;
+}
+
+.label {
+    display: inline-block;
+    cursor: pointer;
+    pointer-events: all;
+    font-size: 2.5em;
+    word-wrap: break-word;
+}
+
+.spacer {
+    display: inline-block;
+    width: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+}
+
+.spacer:before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #ffffff;
+    height: 1px;
+    width: 0%;
+    transition: ease 1s;
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    top: 10px;
+    opacity: 1;
+    font-size: 2.5em;
+    color: #ffffff;
+    top: 0px;
+}
+
+.item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+span {
+    transition: color 0.5s ease;
+}
+
+.twitter:hover span {
+    color: #1DA1F2;
+}
+
+.fb:hover span {
+    color: #4267B2;
+}
+
+.ig:hover span {
+    color: #C13584;
+}
+
+.lin:hover span {
+    color: #0077b5;
+}
+
+.yt:hover span {
+    color: #ff0000;
+}
+
+.menu:hover .spacer:before {
+    width: 100%;
+}
+
+.menu:hover .item {
+    top: 0px;
+}
+
+
+.rights {
+    margin-left: 17px;
+    font-size: 100em;
+    display: block;
+    margin-top: 80px !important;
+    color: #ffffff;
+    bottom: 0px;
+    z-index: 100;
+}
+.rights:hover{
+    cursor: pointer;
+}
+#ra {
+    color: #ffffff;
+}
+
+#ra:hover {
+    color:cyan;
+    cursor: pointer !important ;
+}
+
+@media screen and (max-width: 380px) {
+
+    .label {
+        display: inline-block;
+        cursor: pointer;
+        pointer-events: all;
+        font-size: 2em;
+    }
+
+    .item {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    top: 10px;
+    opacity: 1;
+    font-size: 2em;
+    color: #ffffff;
+    top: 0px;
+}
+
+
+    }
+
+
+    
+@media screen and (max-width: 305px) {
+
+    .label {
+        display: inline-block;
+        cursor: pointer;
+        pointer-events: all;
+        font-size: 1.75em;
+    }
+
+    .item {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    top: 10px;
+    opacity: 1;
+    font-size: 1.75em;
+    color: #ffffff;
+    top: 0px;
+}
+
+
+    }

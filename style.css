@@ -1,0 +1,265 @@
+::placeholder{
+    color: white;
+}
+
+body{
+    background-color: black !important;
+}
+
+#banner {
+    margin-top:60px;
+    padding: 450px 0px;
+    background-position: center;
+    background-image: url("Banner\ \(2\).png");
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#banner-about {
+    margin-top:60px;
+    padding: 450px 0px;
+    background-position: center;
+    background-image: url("Banner\ \(2\).png");
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#banner h1 {
+    font-size: 3em;
+    font-weight: 500;
+    background-color: #111;
+    padding: 5px;
+    width: fit-content;
+    word-wrap: break-word !important;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    margin: 0px 10px;
+    color: white;
+}
+
+#banner-about h1 {
+    font-size: 3em;
+    font-weight: 500;
+    background-color: #111;
+    padding: 5px;
+    width: fit-content;
+    word-wrap: break-word !important;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    margin: 0px 10px;
+    color: white;
+}
+
+span#banner--text::before {
+    transition: ease-in;
+    content: "an Award winning Actor";
+    animation: animate infinite 7s;
+    word-wrap: break-word !important;
+}
+
+
+#social-media a img {
+    margin-left: 10px;
+    transition: filter .2s ease-in-out;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+#social-media a img:hover {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%)
+}
+
+div#about {
+    background-color: #000;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    color: black;
+
+}
+
+
+#about--text--home {
+    text-align: justify;
+}
+
+#about a {
+    margin-top: 20px !important;
+    font-size: 3em;
+    color: #df973d;
+    background-color: white;
+    padding: 10px 15px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: all !important;
+    transition-property: all !important;
+}
+
+#about a:hover {
+    font-size: 32px;
+}
+
+.poster {
+    transition: transform 1s;
+}
+
+.poster:hover {
+    transform: scale(1.02);
+}
+
+.btn {
+    margin-top: 20px !important;
+    font-size: 3em;
+    color: #df973d;
+    background-color: white;
+    padding: 10px 15px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: all !important;
+    transition-property: all !important;
+    border: none;
+}
+
+.btn:hover {
+    font-size: 32px;
+}
+
+.sell_input {
+    width: 70%;
+    border-radius: 0px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 22px;
+    margin: 10px;
+    outline: none !important;
+}
+
+.ma_box-main {
+    margin-top: 50px;
+    background-color: #000;
+    padding: 100px 20px;
+    text-align: center;
+    color: black;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 350px;
+    min-height: 50px;
+}
+
+.article {
+    padding: 25px;
+    border: 1px solid white;
+    font-size: 2em;
+    height: 270px;
+}
+
+.article a {
+    font-size: 1em !important;
+    color: #df973d;
+    background-color: white;
+    padding: 10px 15px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: all !important;
+    transition-property: all !important;
+    border: none;
+    text-decoration: none;
+}
+
+.article a:hover {
+    font-size: 2.4em;
+    text-decoration: underline;
+}
+
+@keyframes animate {
+
+    16% {
+        content: "an IIM graduate";
+    }
+
+    36% {
+        content: "an International TEDx speaker";
+    }
+
+    52% {
+        content: "a TV Panellist";
+    }
+
+    66% {
+        content: "a Defence Expert";
+    }
+
+    82% {
+        content: "a Strategic Affairs Expert";
+    }
+
+    96% {
+        content: "an Award winning Actor";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #banner h1 {
+        font-size: 2.5em;
+        bottom: 10px;
+        margin: 0px 10px !important;
+        right: 0px;
+    }
+
+    #banner {
+        padding: 250px 0;
+    }
+
+    #courses {
+        display: block !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .poster {
+        width: 80%;
+        margin: 25px 10% !important;
+    }
+    #banner{
+        padding: 200px 0px;
+    }
+    #banner-about{
+        padding: 200px 0px;    
+    }
+}
+
+@media screen and (max-width:480px) {
+    #banner-about h1{
+        font-size: 2.5em;
+    }
+    
+}
+
+@media screen and (max-width:440px) {
+    #banner-about h1{
+        font-size: 2em;
+        left: 0px;
+    }
+    
+}
+
+#about-main {
+    padding: 25px 50px;
+}
+
+#about-main {
+    word-wrap: break-word;
+}
